@@ -39,17 +39,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(
-    session({
-        secret: process.env.SESSION_SECRET,
-        resave: false,
-        saveUninitialized: false,
-        cookie: {
-            secure: process.env.NODE_ENV === 'production' ? true : false,
-        },
-        store: new MongoStore({ mongooseConnection: mongoose.connection }),
-    })
-);
+
+app.use('/', require('./routes'));
 
 //set port to environment variable port
 const port = process.env.PORT || 3000;

@@ -1,11 +1,5 @@
 const express = require('express');
-const nodemailer = require('nodemailer');
-const hbs = require('nodemailer-express-handlebars');
 const router = express.Router();
-const Inquiry = require('../models/Inquiry');
-const passport = require('passport');
-const User = require('../models/User');
-const WorkOrder = require('../models/WorkOrder');
 
 // Define options
 var options = {
