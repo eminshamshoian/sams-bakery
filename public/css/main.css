@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+/*  Global */
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.active {
+    color: #246cf1 !important;
+}
+
+/* Fonts */
+.title-stylish {
+    font-family: 'Courgette', cursive;
+}
+
+.title-main {
+    font-family: 'Rozha One', serif;
+}
+
+.text-main {
+    font-family: 'Lato', sans-serif;
+}
+
+.second-color {
+    color: #f9acc6;
+}
+
+.primary-color {
+    color: #2c1a00;
+}
+
+/* Buttons */
+.btn-main {
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #f9acc6;
+}
+
+.btn-main:hover {
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #ffeff4;
+}
+
+.btn-cta {
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.btn-cta:hover {
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.btn-footer {
+    background-color: #246cf1;
+    color: #fff;
+}
+
+.btn-footer:hover {
+    background-color: #044bcf;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%; /* Full width */
+    border-top: solid 1px #f9acc6;
+    padding-top: 0px;
+}
+
+.nav-link {
+    color: #2e2e2e !important;
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #e40f92 !important;
+}
+
+.nav-number {
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 200px;
+    color: #ffffff;
+    background-color: #246cf1;
+    padding: 8px 8px 8px 8px;
+    border-radius: 5px;
+}
+
+/* Mid Desc */
+
+.mid-desc {
+    border: 1px solid #e4e4e4;
+}
+
+.solgan {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.display-3 {
+    font-weight: 400;
+}
+
+.service-img {
+    color: #246cf1;
+}
+
+/* Landing Form */
+
+.landing-form {
+    background-color: hsl(219, 88%, 54%, 0.9);
+    color: #fff;
+    margin-left: 15px;
+    box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.5);
+}
+
+.landing-form input {
+    box-shadow: 3px 3px 9px rgba(75, 75, 75, 0.7);
+}
+
+.landing-select {
+    box-shadow: 3px 3px 9px rgba(75, 75, 75, 0.7);
+}
+
+/* Services */
+.services-section a {
+    text-decoration: none;
+}
+
+.services-section p {
+    color: #000000;
+}
+
+.services-section i {
+    font-size: 40px;
+    padding-top: 10px;
+    margin-right: 10px;
+    color: #246cf1;
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.services-section i:hover {
+    font-size: 40px;
+    padding-top: 10px;
+    margin-right: 10px;
+    color: #225dca;
+}
+
+.service-card {
+    position: relative;
+}
+
+.service-card::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 70px;
+    background: #ccc;
+}
+.service-card:last-child::after {
+    display: none;
+}
+
+p.services {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.hero-section i {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #246cf1;
+}
+
+.hero-text {
+    font-size: 18px;
+}
+
+.testimonial-section {
+    margin-right: 10px;
+}
+
+.img-test {
+    width: 70px;
+    height: 70px;
+}
+
+.mission {
+    color: #246cf1 !important;
+}
+
+.cta {
+    color: #ffffff;
+}
+
+.cta-bg {
+    background-color: #246cf1;
+}
+
+.brands {
+    border: none;
+    flex: 0 0 auto;
+}
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.scrolling-wrapper-flexbox ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+.scrolling-wrapper-flexbox ul li {
+    display: inline-block;
+}
+
+/* Footer */
+.footer p {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Residential repair page */
+.res-app-promo {
+    background-image: url('/img/residential.jpg');
+    background-size: cover;
+    border-radius: 0;
+}
+
+.short-desc {
+    font-size: 18px;
+}
+
+.service-image {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Commercial repair page */
+.commercial-app-promo {
+    background-image: url('/img/commercial.jpg');
+    background-size: cover;
+    border-radius: 0;
+}
+
+.short-desc {
+    font-size: 18px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* hvac repair page */
+.hvac-app-promo {
+    background-image: url('/img/hvac.jpg');
+    background-size: cover;
+}
+
+.short-desc {
+    font-size: 18px;
+}
+
+/* Responsive */
+@media only screen and (max-device-width: 375px) {
+    /* Navbar */
+
+    .nav-number {
+        display: none;
+    }
+
+    /* What we offer */
+    .service-card::after {
+        display: none;
+    }
+
+    /* Why Choose us */
+    .mid-desc {
+        padding-bottom: 20px;
+    }
+
+    .whyus-img {
+        display: none;
+    }
+
+    /* CTA */
+    .cta {
+        padding-bottom: 45px;
+        text-align: left;
+    }
+    .cta h4 {
+        font-size: 21px;
+    }
+
+    .hero-section {
+        margin-right: 0px;
+    }
+
+    /* Landing Form */
+    .landing-form {
+        background-color: hsl(34, 100%, 47%, 0.9);
+        color: #fff;
+        margin-right: 15px;
+        box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.5);
+    }
+
+    .yelp-reviews {
+        margin-right: 350px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    /* Landing Form */
+    .landing-form {
+        background-color: hsl(34, 100%, 47%, 0.9);
+        color: #fff;
+        margin-right: 15px;
+        box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.5);
+    }
+
+    /* Why Choose us */
+    .mid-desc {
+        padding-bottom: 20px;
+    }
+
+    .whyus-img {
+        display: none;
+    }
+
+    .yelp-reviews {
+        margin-left: 180px;
+    }
+
+    .res-services {
+        margin-left: 20px;
+        margin-right: -40px;
+    }
+}

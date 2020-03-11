@@ -1,0 +1,40 @@
+{
+    "name": "nodemailer-node-app",
+    "version": "1.0.0",
+    "description": "Nodemailer app",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "DEBUG=app nodemon app.js",
+        "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "connect-mongo": "^3.0.0",
+        "dotenv": "^7.0.0",
+        "express": "^4.16.4",
+        "express-handlebars": "^3.0.0",
+        "express-session": "^1.16.2",
+        "handlebars": "^4.0.12",
+        "instafeed.js": "^1.4.1",
+        "moment": "^2.24.0",
+        "mongo-cursor-pagination": "^7.1.0",
+        "mongoose": "^5.7.3",
+        "mongoose-deep-populate": "^3.1.1",
+        "mongoose-paginate": "^5.0.3",
+        "mongoose-unique-validator": "^2.0.3",
+        "nodemailer": "^5.1.1",
+        "nodemailer-express-handlebars": "^3.0.0",
+        "passport": "^0.4.0",
+        "passport-local": "^1.0.0",
+        "stripe": "^7.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.4",
+        "onchange": "^5.2.0",
+        "prettier": "1.16.4"
+    }
+}
